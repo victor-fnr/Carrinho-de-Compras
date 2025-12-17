@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto - Carrinho de Compras</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>
+                    <h6 class="text-center">Bem-vindo a Grace in Vogue</h6>
+                </td>
+            </tr>
+            <tr class="logo">
+                <th class="text-center"><img src="img/graceinvogue.png" alt="logo"></th>
+            </tr>
+        </thead>
+    </table>
+    <div class="container">
+
+        <div>
+            <h2>Carrinho</h2>
+        </div><br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>IMAGEM</th>
+                    <th>PRODUTO</th>
+                    <th>PREÇO UNITÁRIO</th>
+                    <th>QUANTIDADE</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/CHRIST-OVERSIZED_PRETA.webp" alt="Produto 1" width="200"></td>
+                    <td>
+                        <div>Camiseta Oversized Masculina Christ</div>
+                        <div><span class="produto-item">Cor:</span> Preto</div>
+                        <div><span class="produto-item">Tamanho:</span> M</div>
+                    </td>
+                    <td id="valor_1">R$ 129,90 BRL</td>
+                    <td>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(1, `-`)"><i class="bi bi-dash-lg"></i></span>
+                        <span id="qtd_1">0</span>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(1, `+`)"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td id="total_1">R$ 0,00 BRL</td>
+                </tr>
+                <tr>
+                    <td><img src="img/ELE_VIVE-CAMISETA_PRETA.webp" alt="Produto 2" width="200"></td>
+                    <td>
+                        <div>Camiseta Masculina Ele Vive</div>
+                        <div><span class="produto-item">Cor:</span> Preto</div>
+                        <div><span class="produto-item">Tamanho:</span> M</div>
+                    </td>
+                    <td id="valor_2">R$ 79,90 BRL</td>
+                    <td>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(2, `-`)"><i class="bi bi-dash-lg"></i></span>
+                        <span id="qtd_2">0</span>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(2, `+`)"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td id="total_2">R$ 0,00 BRL</td>
+                </tr>
+                <tr>
+                    <td><img src="img/JESUS_IS_KING-CAMISETA_PRETA.webp" alt="Produto 3" width="200"></td>
+                    <td>
+                        <div>Camiseta Masculina Jesus is King</div>
+                        <div><span class="produto-item">Cor:</span> Preto</div>
+                        <div><span class="produto-item">Tamanho:</span> M</div>
+                    </td>
+                    <td id="valor_3">R$ 79,90 BRL</td>
+                    <td>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(3, `-`)"><i class="bi bi-dash-lg"></i></span>
+                        <span id="qtd_3">0</span>
+                        <span class="badge text-bg-dark" onclick="alterarQtd(3, `+`)"><i class="bi bi-plus-lg"></i></span>
+                    </td>
+                    <td id="total_3">R$ 0,00 BRL</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <footer class="text-center">
+            <span> <i class="bi bi-cart-check"></i> Total estimado: <span id="totalEstimado">R$ 0,00 BRL</span></span><br>
+            <pan>Tributos, descontos e frete calculados no checkout</pan>
+        </footer>
+    </div>
+</body>
+
+
+
+</html>

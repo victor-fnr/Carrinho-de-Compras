@@ -1,0 +1,13 @@
+h6{
+    font-weight: normal;
+}
+
+.produto-item{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #242424;
+    color: #fff;
+    padding: 20px;
+}
