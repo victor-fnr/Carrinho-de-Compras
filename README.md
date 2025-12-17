@@ -1,2 +1,2 @@
 # Carrinho de Compras
-Primeiro repositório da faculdade de Análise e Desenvolvimento de Sistemas, 1
+Primeiro repositório - Atividade front-end - Faculdade de Análise e Desenvolvimento de Sistemas - 1° Semestre
